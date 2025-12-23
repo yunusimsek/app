@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Yönlendiriliyor...</title>
+  <script>
+    const ua = navigator.userAgent.toLowerCase();
+
+    if (ua.includes("android")) {
+      window.location.replace(
+        "https://play.google.com/store/apps/details?id=com.instagram.android"
+      );
+    } else if (
+      ua.includes("iphone") ||
+      ua.includes("ipad") ||
+      ua.includes("ipod")
+    ) {
+      window.location.replace(
+        "https://apps.apple.com/cy/app/instagram/id389801252"
+      );
+    } else {
+      document.write("Lütfen mobil cihazdan açın.");
+    }
+  </script>
+</head>
+<body></body>
+</html>
